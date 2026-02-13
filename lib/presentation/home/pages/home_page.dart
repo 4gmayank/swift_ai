@@ -23,11 +23,11 @@ class HomePage extends StatelessWidget {
         itemCount: conversations.length,
         itemBuilder: (_, index) => ListTile(
           title: Text(conversations[index]),
-          onTap: () => context.go('/chat/${conversations[index]}'),
+          onTap: () => context.push('/chat/${conversations[index]}'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => context.go('/chat/New Conversation'),
+        onPressed: () => context.push('/chat/New Conversation'),
         child: Icon(Icons.add),
       ),
     );
