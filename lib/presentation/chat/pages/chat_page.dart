@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/message_bubble.dart';
 import '../widgets/chat_input_field.dart';
+import '../widgets/typing_indicator.dart';
 import 'dart:async';
 
 class ChatPage extends StatefulWidget {
@@ -55,6 +56,7 @@ class _ChatPageState extends State<ChatPage> {
                   content: messages[index]["content"]!),
             ),
           ),
+          TypingIndicator(),
           ChatInputField(onSend: sendMessage),
         ],
       ),

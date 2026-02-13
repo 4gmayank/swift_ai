@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:swift_ai/presentation/common/widgets/empty_widget.dart';
 
 class HomePage extends StatelessWidget {
-  final List<String> conversations = []; // empty for demo
+  final List<String> conversations = [];
 
   @override
   Widget build(BuildContext context) {
