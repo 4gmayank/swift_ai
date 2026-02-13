@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:swift_ai/presentation/splash/splash_page.dart';
 import 'package:swift_ai/routes.dart';
 
 void main() async {
@@ -9,6 +8,8 @@ void main() async {
 }
 
 class SwiftAIApp extends StatelessWidget {
+  const SwiftAIApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
