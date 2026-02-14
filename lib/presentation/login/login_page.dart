@@ -13,8 +13,11 @@ class LoginPage extends ConsumerWidget {
 
     ref.listen(loginControllerProvider, (previous, next) {
       next.whenOrNull(
-        data: (_) {
-          context.go('/home');
+        data: (user) {
+          if (user != null) {
+            print(user.email);
+            context.go('/home', extra: user);
+          }
         },
         error: (error, _) {
           ScaffoldMessenger.of(
@@ -40,7 +43,7 @@ class LoginPage extends ConsumerWidget {
               SizedBox(height: 40),
               SignInButtons(
                 onGuest: () async {
-                  ref.read(loginControllerProvider.notifier).signInWithGoogle();
+                   context.go('/home');
                 },
                 onGoogle: () {
                   ref.read(loginControllerProvider.notifier).signInWithGoogle();

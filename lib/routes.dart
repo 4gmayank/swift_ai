@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:go_router/go_router.dart';
 import 'package:swift_ai/presentation/login/login_page.dart';
 import 'presentation/splash/splash_page.dart';
@@ -9,7 +10,13 @@ final GoRouter router = GoRouter(
   routes: [
     GoRoute(path: '/', builder: (context, state) => SplashPage()),
     GoRoute(path: '/auth', builder: (context, state) => LoginPage()),
-    GoRoute(path: '/home', builder: (context, state) => HomePage()),
+    GoRoute(
+      path: '/home',
+      builder: (context, state) {
+        final user = state.extra as User?;
+        return HomePage(user: user);
+      },
+    ),
     GoRoute(
       path: '/chat/:title',
       builder: (context, state) {

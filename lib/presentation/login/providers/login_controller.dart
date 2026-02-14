@@ -16,7 +16,11 @@ class LoginController extends AsyncNotifier<User?> {
     state = const AsyncLoading();
 
     state = await AsyncValue.guard(() async {
-      return await _signInWithGoogle.call();
+      var user = await _signInWithGoogle.call();
+      if (user == null) {
+        throw Exception("Login cancelled");
+      }
+      return user;
     });
   }
 }
