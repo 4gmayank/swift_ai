@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:swift_ai/presentation/auth/widget/auth_button.dart';
 
-class AuthPage extends StatelessWidget {
+class LoginPage extends ConsumerWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
