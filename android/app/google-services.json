@@ -7,12 +7,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1087298739444:android:3c7743f391513084b392a1",
+        "mobilesdk_app_id": "1:1087298739444:android:63a6feb7c28f2f42b392a1",
         "android_client_info": {
-          "package_name": "com.chat.swift.swift_ai"
+          "package_name": "com.chat.swift"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1087298739444-vgcj8qk1hff2f4gj1rvpet61e8q5j30e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chat.swift",
+            "certificate_hash": "12d34278a4e6d09f5a4e13aac84b56e54b4595e0"
+          }
+        },
+        {
+          "client_id": "1087298739444-4s1l5o0ot20cm037h5edc1b36s8n0e5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC6AVqFaMkgWeJdN0AXWV1QGw1eGNyboo8"
@@ -20,7 +33,55 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087298739444-4s1l5o0ot20cm037h5edc1b36s8n0e5a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1087298739444-60g163lr9grdhtura7no58engqlfgmvb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chat.swift.swiftAi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087298739444:android:3c7743f391513084b392a1",
+        "android_client_info": {
+          "package_name": "com.chat.swift.swift_ai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087298739444-4s1l5o0ot20cm037h5edc1b36s8n0e5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6AVqFaMkgWeJdN0AXWV1QGw1eGNyboo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087298739444-4s1l5o0ot20cm037h5edc1b36s8n0e5a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1087298739444-60g163lr9grdhtura7no58engqlfgmvb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chat.swift.swiftAi"
+              }
+            }
+          ]
         }
       }
     }
